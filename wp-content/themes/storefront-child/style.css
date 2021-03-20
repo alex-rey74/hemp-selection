@@ -10,3 +10,25 @@ Version: 0.1.0
 .center{
     text-align: center;
 }
+
+.custom-logo{
+    margin: auto;
+}
+
+.site-search{
+    display: none;
+}
+
+.logo-float{
+    float: left;
+}
+
+@media (min-width: 768px){
+    .woocommerce-active .site-header .site-branding {
+        width:100%;
+    }
+}
+
+.storefront-primary-navigation{
+    background-color: black;
+}

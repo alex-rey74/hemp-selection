@@ -24,3 +24,5 @@ Stack trace:
 #8 C:\wamp64\www\hemp-selection\wp-content\themes\storefront\header.php(18): wp_head()
 #9 C:\wamp64\www\hemp-selectio dans C:\wamp64\www\hemp-selection\wp-content\themes\storefront-child\functions.php à la ligne 8
 
+2021-03-20T17:30:45+00:00 CRITICAL syntax error, unexpected '}', expecting end of file dans C:\wamp64\www\hemp-selection\wp-content\themes\storefront-child\functions.php à la ligne 15
+
