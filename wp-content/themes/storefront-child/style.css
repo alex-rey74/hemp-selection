@@ -7,6 +7,16 @@ Template: storefront
 Version: 0.1.0
 */
 
+@font-face {
+    font-family: "Audrey Medium";
+    src: url("./assets/fonts/AUDREY-MEDIUM.OTF");
+}
+
+@font-face {
+    font-family: "Kenyan Coffee";
+    src: url("./assets/fonts/KENYAN\ COFFEE\ BD.TTF");
+}
+
 .center{
     text-align: center;
 }
@@ -31,4 +41,30 @@ Version: 0.1.0
 
 .storefront-primary-navigation{
     background-color: black;
+}
+
+.half-wrapper{
+    display: flex;
+    margin-top: 50px;
+}
+
+.half-page{
+    width: 50%;
+}
+
+.black{
+    background-color: black;
+}
+
+.text-center{
+    text-align: center;
+    margin: 50% 0;
+}
+
+.audrey{
+    font-family: "Audrey Medium";
+}
+
+.main-navigation{
+    font-family: "Audrey Medium";
 }
