@@ -24,13 +24,13 @@ get_header(); ?>
 				echo do_shortcode('[smartslider3 slider="2"]');
 			?>
 			<div class="half-wrapper">
-				<div class="half-page ">
+				<div class="half-page" data-aos="zoom-out-right">
 					<div class="text-center audrey">
 						<p>Bienvenue sur Hemp Selection</p>
 						<p>Votre référence en produit CBD</p>
 					</div>
 				</div>
-				<div class="half-page black">
+				<div class="half-page black" data-aos="zoom-out-left">
 					<img src="<?php echo wp_get_attachment_image_src(157, 'full')[0]; ?>" alt="">
 				</div>
 			</div>

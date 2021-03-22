@@ -42,6 +42,7 @@ class ClassWatcher {
     }
 }
 
+AOS.init();
 let flag = false;
 
 let callbackStickyAdd = () => {
