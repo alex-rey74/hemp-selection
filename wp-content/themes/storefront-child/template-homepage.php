@@ -25,14 +25,39 @@ get_header(); ?>
 			?>
 			<div class="half-wrapper">
 				<div class="half-page" data-aos="zoom-out-right">
-					<div class="text-center audrey">
-						<p>Bienvenue sur Hemp Selection</p>
-						<p>Votre référence en produit CBD</p>
-					</div>
+					<a href="<?php echo get_bloginfo('wpurl'). "/categorie-produit/fleurs/"; ?>">
+						<div class="container-img fleurs">
+							<h2 class="caption">FLEURS</h2>
+						</div>
+					</a>
 				</div>
-				<div class="half-page black" data-aos="zoom-out-left">
-					<img src="<?php echo wp_get_attachment_image_src(157, 'full')[0]; ?>" alt="">
+				
+				<div class="half-page" data-aos="zoom-out-left">
+					<a href="<?php echo get_bloginfo('wpurl'). "/categorie-produit/aromes-vape/"; ?>">
+						<div class="container-img vape">
+							<h2 class="caption">VAPE</h2>
+						</div>
+					</a>
 				</div>
+			</div>
+			<div class="half-wrapper">
+				<div class="half-page " data-aos="zoom-out-right">
+					<a href="<?php echo get_bloginfo('wpurl'). "/categorie-produit/huiles/"; ?>">
+						<div class="container-img huile">
+							<h2 class="caption">HUILE</h2>
+						</div>
+					</a>
+				</div>
+				<div class="half-page " data-aos="zoom-out-left">
+					<a href="<?php echo get_bloginfo('wpurl'). "/categorie-produit/alimentaire/"; ?>">
+						<div class="container-img alimentaire">
+							<h2 class="caption">ALIMENTAIRE</h2>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div data-aos="zoom-out">
+				<?php echo do_shortcode('[products limit="8" columns="4" best_selling="true" ]') ?>
 			</div>
 
 		</main><!-- #main -->

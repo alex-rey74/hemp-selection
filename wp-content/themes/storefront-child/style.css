@@ -50,10 +50,7 @@ Version: 0.1.0
 
 .half-page{
     width: 50%;
-}
-
-.black{
-    background-color: black;
+    text-align: center;
 }
 
 .text-center{
@@ -67,4 +64,31 @@ Version: 0.1.0
 
 .main-navigation{
     font-family: "Audrey Medium";
+}
+
+.caption{
+    line-height: 416px;
+    color: white;
+}
+.container-img{
+    background-color: rgba( 128, 128, 128, 0.5);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    margin: 20px;
+}
+
+.fleurs{
+    background-image: url('../../uploads/2021/03/canebiera-afghan-cbd-416x416.jpg');
+}
+
+.vape{
+    background-image: url('../../uploads/2021/03/bloc-amnesia-416x416.jpg');
+}
+
+.huile{
+    background-image: url('../../uploads/2021/03/huile-cbd-chanvre-10-416x416.png');
+}
+
+.alimentaire{
+    background-image: url('../../uploads/2021/03/chocolat-lait-biologique-cbd-delikan_599918525-416x416.jpg');
 }
