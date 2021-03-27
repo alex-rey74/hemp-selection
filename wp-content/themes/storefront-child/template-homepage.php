@@ -56,6 +56,12 @@ get_header(); ?>
 					</a>
 				</div>
 			</div>
+			<div class="separator">
+				<img src="<?php echo wp_get_upload_dir()['baseurl']."/img/deco3.svg"?>" alt="">
+			</div>
+			<div>
+				<h2 class="center audrey">Nos Meilleures Ventes</h2>
+			</div>
 			<div data-aos="zoom-out">
 				<?php echo do_shortcode('[products limit="8" columns="4" best_selling="true" ]') ?>
 			</div>

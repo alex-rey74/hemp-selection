@@ -41,7 +41,6 @@ class ClassWatcher {
         }
     }
 }
-
 AOS.init();
 let flag = false;
 
@@ -73,4 +72,4 @@ let callbackStickyRmv = () => {
 setTimeout(() => {
     let target = document.querySelector('.sticky-element-placeholder');
     let classWatcher = new ClassWatcher(target, 'sticky-element-active', callbackStickyAdd, callbackStickyRmv);
-}, 200);
+}, 100);
