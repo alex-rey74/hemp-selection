@@ -197,3 +197,15 @@ Version: 0.1.0
 a:focus{
     outline: none;
 }
+
+#menu-item-367{
+    float: left;
+}
+#menu-item-367 a{
+    padding: 0;
+}
+
+#menu-item-367 a:hover:after { 
+    width: 0;
+}
+

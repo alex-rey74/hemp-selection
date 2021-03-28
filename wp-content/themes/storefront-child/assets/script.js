@@ -69,7 +69,9 @@ let callbackStickyRmv = () => {
     }
 }
 
+/*
 setTimeout(() => {
     let target = document.querySelector('.element-is-not-sticky');
     let classWatcher = new ClassWatcher(target, 'element-is-sticky', callbackStickyAdd, callbackStickyRmv);
 }, 200);
+*/
