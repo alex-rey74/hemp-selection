@@ -97,8 +97,99 @@ Version: 0.1.0
     margin-top: 30px;
 }
 
+.separator-avis{
+    margin-top: 50px;
+}
+
+.wrapper-kpi{
+    margin-top: 60px;
+    display: flex;
+}
+
+.kpi{
+    width: 25%;
+}
+
+.svg-kpi{
+    width: 100px;
+    height: auto;
+    margin: auto;
+}
+
+.wc-block-review-list.wc-block-components-review-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wc-block-review-list-item__item.wc-block-components-review-list-item__item{
+    flex: 33.3333%;
+    margin: 0 2px;
+}
+
+.wp-block-group{
+    margin-top:20px;
+}
+
+.wc-block-review-list-item__info.wc-block-components-review-list-item__info{
+    height: 80px;
+}
+
+.wc-block-review-list-item__product.wc-block-components-review-list-item__product a{
+    color:#f2c000;
+}
+
+/*---  RESPONSIVE LAYOUT  ---*/
+@media (max-width: 800px) {
+    .wrapper-kpi {
+      flex-direction: column;
+    }
+
+    .kpi{
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .kpi h4{
+        font-size: 1.2rem;
+    }
+
+    .half-wrapper{
+        flex-direction: column;
+    }
+
+    .half-page{
+        width: 100%;
+    }
+
+    .wc-block-review-list-item__item.wc-block-components-review-list-item__item{
+        flex: 50%;
+    }
+  }
+
 @media (min-width: 768px){
     .storefront-breadcrumb {
         margin: 0!important;
     }
+}
+
+.menu-item a::after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    bottom: 15px;
+    position: absolute;
+    background: #f2c000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.menu-item a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+a:focus{
+    outline: none;
 }
