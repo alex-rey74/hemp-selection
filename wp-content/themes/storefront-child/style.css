@@ -17,6 +17,10 @@ Version: 0.1.0
     src: url("./assets/fonts/KENYAN\ COFFEE\ BD.TTF");
 }
 
+.age-gate-logo-image{
+    margin: auto!important;
+}
+
 .center{
     text-align: center;
 }

@@ -70,6 +70,6 @@ let callbackStickyRmv = () => {
 }
 
 setTimeout(() => {
-    let target = document.querySelector('.sticky-element-placeholder');
-    let classWatcher = new ClassWatcher(target, 'sticky-element-active', callbackStickyAdd, callbackStickyRmv);
-}, 100);
+    let target = document.querySelector('.element-is-not-sticky');
+    let classWatcher = new ClassWatcher(target, 'element-is-sticky', callbackStickyAdd, callbackStickyRmv);
+}, 200);
