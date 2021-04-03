@@ -20,4 +20,19 @@
 
     <p>When the time comes, upgrading to version 3 should be fairly seamless for most users. However, if you are extending Age Gate via hooks, there will be some changes. Over the next few weeks we'll be putting together information on how this can best be achieved.</p>
 
+    // find filters
+    <?php
+        $files = glob(AGE_GATE_PATH . '**/*.php');
+
+    ?>
+    <pre>
+        <?php print_r($files); ?>
+
+        <?php foreach ($files as $file) {
+        $fileData = file_get_contents($file);
+        // preg_match_all('/apply_filters\((?:\'|")(.*?)(?:\'|")/', $fileData, $matches);
+        preg_match_all('/apply_filters\((.*?)\)/', $fileData, $matches);
+        print_r($matches[1] ?? '');
+    } ?>
+    </pre>
 </div>

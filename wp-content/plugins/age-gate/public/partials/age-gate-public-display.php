@@ -182,7 +182,9 @@ $errors = self::$errors;
 
           echo form_hidden('action', 'age_gate_submit');
 
-          echo str_replace('id="age_gate[nonce]"', '', wp_nonce_field('age_gate_form', 'age_gate[nonce]', true, false));
+          if (!$this->js) {
+              echo str_replace('id="age_gate[nonce]"', '', wp_nonce_field('age_gate_form', 'age_gate[nonce]', true, false));
+          }
 
           if (self::$language && self::$language->current['language_code'] !== self::$language->default['language_code']) {
               echo form_hidden('lang', self::$language->current['language_code']);

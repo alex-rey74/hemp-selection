@@ -1,0 +1,28 @@
+{
+    "remotePath": "./www/",
+    "host": "ftp.cluster027.hosting.ovh.net",
+    "username": "iecgvmn",
+    "password": "BFuEgQXuEAF6",
+    "port": 21,
+    "secure": false,
+    "protocol": "ftp",
+    "uploadOnSave": true,
+    "passive": false,
+    "debug": true,
+    "privateKeyPath": null,
+    "passphrase": null,
+    "agent": null,
+    "allow": [],
+    "ignore": [
+        "\\.vscode",
+        "\\.git",
+        "\\.DS_Store",
+        "wp-config.php"
+    ],
+    "generatedFiles": {
+        "extensionsToInclude": [
+            ""
+        ],
+        "path": ""
+    }
+}

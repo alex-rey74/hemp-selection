@@ -205,9 +205,11 @@ class Age_Gate_Public_JS extends Age_Gate_Public
         $ag = ob_get_contents();
         ob_end_clean();
 
+        do_action('age_gate/script_template/before');
         echo '<script type="text/template" id="tmpl-age-gate">';
         echo preg_replace('~>\s*\n\s*<~', '><', $ag);
         echo '</script>';
+        do_action('age_gate/script_template/after');
     }
 
     public function register_rest_endpoints()

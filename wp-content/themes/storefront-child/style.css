@@ -78,23 +78,24 @@ Version: 0.1.0
     background-color: rgba( 128, 128, 128, 0.5);
     background-blend-mode: darken;
     background-repeat: no-repeat;
+    background-size: cover;
     margin: 20px;
 }
 
 .fleurs{
-    background-image: url('../../uploads/2021/03/canebiera-afghan-cbd-416x416.jpg');
+    background-image: url('../../uploads/img/illustrations/fleurs.jpg');
 }
 
 .vape{
-    background-image: url('../../uploads/2021/03/bloc-amnesia-416x416.jpg');
+    background-image: url('../../uploads/img/illustrations/vape.jpg');
 }
 
 .huile{
-    background-image: url('../../uploads/2021/03/huile-cbd-chanvre-10-416x416.png');
+    background-image: url('../../uploads/img/illustrations/huile.jpg');
 }
 
 .alimentaire{
-    background-image: url('../../uploads/2021/03/chocolat-lait-biologique-cbd-delikan_599918525-416x416.jpg');
+    background-image: url('../../uploads/img/illustrations/alimentaire.jpg');
 }
 
 .separator{
@@ -207,5 +208,9 @@ a:focus{
 
 #menu-item-367 a:hover:after { 
     width: 0;
+}
+
+.star-rating span:before{
+    color: #f2c000!important;
 }
 

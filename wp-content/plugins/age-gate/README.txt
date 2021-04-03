@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=donat
 Requires at least: 5.0.0
 Requires PHP: 5.6
 Tested up to: 5.7
-Stable tag: 2.14.0
+Stable tag: 2.15.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -75,6 +75,11 @@ From version 1.4.0 those using caching can select the "Cache Bypass" option to a
 6. Manage what users can change Age Gate's setting, restrict posts and exclude settings from certain post types.
 
 == Changelog ==
+= 2.15.0 =
+* Removed unused nonce field in JS mode
+* Added actions `age_gate/script_template/before` and `age_gate/script_template/after`
+* Improved shortcode functionality with AJAX requests
+
 = 2.14.0 =
 * Fixed issue when using transitions for some users
 * Improved bot detection in JavaScript mode
