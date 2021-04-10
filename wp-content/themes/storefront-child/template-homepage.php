@@ -33,7 +33,7 @@ get_header(); ?>
             </div>
 
             <div class="half-page" data-aos="zoom-out-left">
-                <a href="<?php echo get_bloginfo('wpurl'). "/categorie-produit/aromes-vape/"; ?>">
+                <a href="<?php echo get_bloginfo('wpurl'). "/categorie-produit/vape/"; ?>">
                     <div class="container-img vape">
                         <h2 class="caption">VAPE</h2>
                     </div>

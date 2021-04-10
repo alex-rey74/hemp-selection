@@ -214,3 +214,15 @@ a:focus{
     color: #f2c000!important;
 }
 
+.content-categories{
+    width: 100%!important;
+}
+
+
+.widget_product_categories ul li:before{
+    content: "\f55f"!important;
+}
+
+.product-categories ul li:before{
+    content: "\f55f"!important;
+}
