@@ -17,6 +17,10 @@ Version: 0.1.0
     src: url("./assets/fonts/KENYAN\ COFFEE\ BD.TTF");
 }
 
+a{
+    color:#f2c000;
+}
+
 .age-gate-logo-image{
     margin: auto!important;
 }
@@ -248,3 +252,40 @@ a:focus{
 .cat-item a{
     text-decoration: none!important;
 }
+
+#post-389 h1 {
+    font-family: "Audrey Medium";
+}
+
+#post-389 h3{
+    font-family: "Audrey Medium";
+}
+
+#post-390 h1 {
+    font-family: "Audrey Medium";
+}
+
+#post-390 h3{
+    font-family: "Audrey Medium";
+}
+
+.entry-title{
+    font-family: "Audrey Medium";
+}
+
+.col-footer{
+    width: 33%;
+}
+
+.no-style{
+    list-style-type: none;
+}
+
+.footer-hs{
+    display: flex;
+}
+
+.logo-footer{
+    width: 150px;
+}
+

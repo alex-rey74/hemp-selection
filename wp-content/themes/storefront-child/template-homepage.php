@@ -99,8 +99,9 @@ get_header(); ?>
             <?php
 			$content = get_post(360);
 			$blocks = parse_blocks($content->post_content);
+            $i = 0;
 			foreach ($blocks as $key => $block) {
-			echo render_block($block);
+			    echo render_block($block);
 			}
 			?>
         </div>
