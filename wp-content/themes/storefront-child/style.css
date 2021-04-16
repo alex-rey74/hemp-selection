@@ -225,10 +225,12 @@ a:focus{
 
 .widget_product_categories ul li:before{
     content: "\f55f"!important;
+    color: black;
 }
 
 .product-categories ul li:before{
     content: "\f55f"!important;
+    color: black;
 }
 
 .cat-item a:after{
@@ -289,3 +291,6 @@ a:focus{
     width: 150px;
 }
 
+.widget .widget-title, .widget .widgettitle{
+    font-weight: 600!important;
+}
