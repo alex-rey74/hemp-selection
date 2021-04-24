@@ -14,7 +14,7 @@
  
 get_header(); ?>
 
-<div id="primary" class="content-area content-categories">
+<div id="primary" class="content-area content-max-width">
     <main id="main" class="site-main" role="main">
         <div class="separator">
             <img src="<?php echo wp_get_upload_dir()['baseurl']."/img/deco3.svg"?>" alt="">

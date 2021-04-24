@@ -218,7 +218,7 @@ a:focus{
     color: #f2c000!important;
 }
 
-.content-categories{
+.content-max-width{
     width: 100%!important;
 }
 
@@ -325,4 +325,13 @@ a:focus{
 
 .is-menu.default form {
     max-width: 150px!important;
+}
+
+#map {
+    height: 500px;
+    margin-top: 50px;
+  }
+
+.woocommerce input:focus{
+    outline-color: #f2c000!important;
 }
