@@ -292,5 +292,37 @@ a:focus{
 }
 
 .widget .widget-title, .widget .widgettitle{
-    font-weight: 600!important;
+    font-weight: 600!important  ;
+}
+
+.current-cat a{
+    color: #f2c000!important;
+}
+
+@media (min-width: 768px){
+    .col-full {
+        max-width: 85%;
+    }
+    .right-sidebar .widget-area {
+        width: 15%;
+    }
+}
+
+.is-search-input{
+    border: none!important;
+    background-color: black!important;
+    color: #f2c000!important;
+}
+
+.is-form-style .is-search-submit path{
+    fill: #f2c000!important;
+}
+
+.is-search-icon{
+    background: black;
+    border:none;
+}
+
+.is-menu.default form {
+    max-width: 150px!important;
 }
