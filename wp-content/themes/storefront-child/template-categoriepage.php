@@ -42,7 +42,7 @@ get_header(); ?>
         </div>
         <div class="half-wrapper">
             <div class="half-page " data-aos="zoom-out-right">
-                <a href="<?php echo get_bloginfo('wpurl'). "/categorie-produit/huiles/"; ?>">
+                <a href="<?php echo get_bloginfo('wpurl'). "/categorie-produit/huiles-pastilles/"; ?>">
                     <div class="container-img huile">
                         <h2 class="caption">HUILE</h2>
                     </div>
