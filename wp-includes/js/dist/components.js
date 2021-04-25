@@ -672,7 +672,7 @@ function _unsupportedIterableToArray(o, minLen) {
 /* harmony import */ var _wordpress_deprecated__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_wordpress_deprecated__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _tooltip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(79);
 /* harmony import */ var _icon__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(76);
-/* harmony import */ var _visually_hidden__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(56);
+/* harmony import */ var _visually_hidden__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(57);
 
 
 
@@ -1739,7 +1739,8 @@ function getDocument(element) {
 
 
 /***/ }),
-/* 56 */
+/* 56 */,
+/* 57 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1852,7 +1853,6 @@ function VisuallyHidden(_ref) {
 
 
 /***/ }),
-/* 57 */,
 /* 58 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -17899,7 +17899,7 @@ var CompositeItem = __webpack_require__(181);
 var build_module_tooltip = __webpack_require__(79);
 
 // EXTERNAL MODULE: ./node_modules/@wordpress/components/build-module/visually-hidden/index.js + 1 modules
-var visually_hidden = __webpack_require__(56);
+var visually_hidden = __webpack_require__(57);
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/alignment-matrix-control/utils.js
 /**
@@ -21578,10 +21578,10 @@ function subV(v1, v2) {
     return v - v2[i];
   });
 }
-/**
- * Calculates distance
- * @param movement the difference between current and initial vectors
- * @returns distance
+/**
+ * Calculates distance
+ * @param movement the difference between current and initial vectors
+ * @returns distance
  */
 
 function calculateDistance(movement) {
@@ -21603,13 +21603,13 @@ function calculateAllGeometry(movement, delta) {
     direction: direction
   };
 }
-/**
- * Calculates all kinematics
- * @template T the expected vector type
- * @param movement the difference between current and initial vectors
- * @param delta the difference between current and previous vectors
- * @param delta_t the time difference between current and previous timestamps
- * @returns all kinematics
+/**
+ * Calculates all kinematics
+ * @template T the expected vector type
+ * @param movement the difference between current and initial vectors
+ * @param delta the difference between current and previous vectors
+ * @param delta_t the time difference between current and previous timestamps
+ * @returns all kinematics
  */
 
 function calculateAllKinematics(movement, delta, dt) {
@@ -21631,11 +21631,11 @@ function calculateAllKinematics(movement, delta, dt) {
     direction: direction
   };
 }
-/**
- * Because IE doesn't support `Math.sign` function, so we use the polyfill version of the function.
- * This polyfill function is suggested by Mozilla:
- * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign#Polyfill
- * @param x target number
+/**
+ * Because IE doesn't support `Math.sign` function, so we use the polyfill version of the function.
+ * This polyfill function is suggested by Mozilla:
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign#Polyfill
+ * @param x target number
  */
 
 function sign(x) {
@@ -21778,11 +21778,11 @@ function _createForOfIteratorHelperLoose(o, allowArrayLike) {
 }
 
 function noop() {}
-/**
- * TODO Beware that only optimized cases are covered in tests =)
- * TODO Need to cover general case as well
- *
- * @param fns
+/**
+ * TODO Beware that only optimized cases are covered in tests =)
+ * TODO Need to cover general case as well
+ *
+ * @param fns
  */
 
 function chainFns() {
@@ -21803,12 +21803,12 @@ function chainFns() {
     return result;
   };
 }
-/**
- * Expects a simple value or 2D vector (an array with 2 elements) and
- * always returns 2D vector. If simple value is passed, returns a
- * vector with this value as both coordinates.
- *
- * @param value
+/**
+ * Expects a simple value or 2D vector (an array with 2 elements) and
+ * always returns 2D vector. If simple value is passed, returns a
+ * vector with this value as both coordinates.
+ *
+ * @param value
  */
 
 function ensureVector(value, fallback) {
@@ -21823,21 +21823,21 @@ function ensureVector(value, fallback) {
   if (Array.isArray(value)) return value;
   return [value, value];
 }
-/**
- * Helper for defining a default value
- *
- * @param value
- * @param fallback
+/**
+ * Helper for defining a default value
+ *
+ * @param value
+ * @param fallback
  */
 
 function assignDefault(value, fallback) {
   return Object.assign({}, fallback, value || {});
 }
-/**
- * Resolves getters (functions) by calling them
- * If simple value is given it just passes through
- *
- * @param v
+/**
+ * Resolves getters (functions) by calling them
+ * If simple value is given it just passes through
+ *
+ * @param v
  */
 
 function valueFn(v) {
@@ -21883,9 +21883,9 @@ function resolveWith(config, resolvers) {
   return result;
 }
 
-/**
- * Whether the browser supports GestureEvent (ie Safari)
- * @returns true if the browser supports gesture event
+/**
+ * Whether the browser supports GestureEvent (ie Safari)
+ * @returns true if the browser supports gesture event
  */
 function supportsGestureEvents() {
   try {
@@ -21932,10 +21932,10 @@ function getGenericEventData(event) {
 var identity = function identity(xy) {
   return xy;
 };
-/**
- * Gets pointer event values.
- * @param event
- * @returns pointer event values
+/**
+ * Gets pointer event values.
+ * @param event
+ * @returns pointer event values
  */
 
 
@@ -21952,10 +21952,10 @@ function getPointerEventValues(event, transform) {
 
   return transform([clientX, clientY]);
 }
-/**
- * Gets two touches event data
- * @param event
- * @returns two touches event data
+/**
+ * Gets two touches event data
+ * @param event
+ * @returns two touches event data
  */
 
 function getTwoTouchesEventValues(event, pointerIds, transform) {
@@ -21986,10 +21986,10 @@ function getTwoTouchesEventValues(event, pointerIds, transform) {
     origin: origin
   };
 }
-/**
- * Gets scroll event values
- * @param event
- * @returns scroll event values
+/**
+ * Gets scroll event values
+ * @param event
+ * @returns scroll event values
  */
 
 function getScrollEventValues(event, transform) {
@@ -22009,10 +22009,10 @@ function getScrollEventValues(event, transform) {
 
 var LINE_HEIGHT = 40;
 var PAGE_HEIGHT = 800;
-/**
- * Gets wheel event values.
- * @param event
- * @returns wheel event values
+/**
+ * Gets wheel event values.
+ * @param event
+ * @returns wheel event values
  */
 
 function getWheelEventValues(event, transform) {
@@ -22034,10 +22034,10 @@ function getWheelEventValues(event, transform) {
 
   return transform([deltaX, deltaY]);
 }
-/**
- * Gets webkit gesture event values.
- * @param event
- * @returns webkit gesture event values
+/**
+ * Gets webkit gesture event values.
+ * @param event
+ * @returns webkit gesture event values
  */
 
 function getWebkitGestureEventValues(event, transform) {
@@ -22556,18 +22556,18 @@ var RecognizersMap = /*#__PURE__*/new Map();
 var identity$1 = function identity(xy) {
   return xy;
 };
-/**
- * @private
- * Recognizer abstract class.
+/**
+ * @private
+ * Recognizer abstract class.
  */
 
 
 var Recognizer = /*#__PURE__*/function () {
-  /**
-   * Creates an instance of a gesture recognizer.
-   * @param stateKey drag, move, pinch, etc.
-   * @param controller the controller attached to the gesture
-   * @param [args] the args that should be passed to the gesture handler
+  /**
+   * Creates an instance of a gesture recognizer.
+   * @param stateKey drag, move, pinch, etc.
+   * @param controller the controller attached to the gesture
+   * @param [args] the args that should be passed to the gesture handler
    */
   function Recognizer(controller, args) {
     var _this = this;
@@ -22600,8 +22600,8 @@ var Recognizer = /*#__PURE__*/function () {
     this.clearTimeout = function () {
       clearTimeout(_this.controller.timeouts[_this.stateKey]);
     };
-    /**
-     * Fires the gesture handler
+    /**
+     * Fires the gesture handler
      */
 
 
@@ -22610,9 +22610,9 @@ var Recognizer = /*#__PURE__*/function () {
         forceFlag = false;
       }
 
-      /**
-       * If the gesture has been blocked (this can happen when the gesture has started in an unwanted direction),
-       * clean everything and don't do anything.
+      /**
+       * If the gesture has been blocked (this can happen when the gesture has started in an unwanted direction),
+       * clean everything and don't do anything.
        */
       if (_this.state._blocked) {
         // we need debounced gestures to end by themselves
@@ -22670,11 +22670,11 @@ var Recognizer = /*#__PURE__*/function () {
   _proto.updateGestureState = function updateGestureState(gestureState) {
     Object.assign(this.state, gestureState);
   }
-  /**
-   * Returns state properties depending on the movement and state.
-   *
-   * Should be overriden for custom behavior, doesn't do anything in the implementation
-   * below.
+  /**
+   * Returns state properties depending on the movement and state.
+   *
+   * Should be overriden for custom behavior, doesn't do anything in the implementation
+   * below.
    */
   ;
 
@@ -22684,8 +22684,8 @@ var Recognizer = /*#__PURE__*/function () {
       _blocked: false
     };
   }
-  /**
-   * Returns basic movement properties for the gesture based on the next values and current state.
+  /**
+   * Returns basic movement properties for the gesture based on the next values and current state.
    */
   ;
 
@@ -22714,16 +22714,16 @@ var Recognizer = /*#__PURE__*/function () {
 
     var _intentional = intentionalityCheck._intentional;
     var _movement = M;
-    /**
-     * The movement sent to the handler has 0 in its dimensions when intentionality is false.
-     * It is calculated from the actual movement minus the threshold.
+    /**
+     * The movement sent to the handler has 0 in its dimensions when intentionality is false.
+     * It is calculated from the actual movement minus the threshold.
      */
 
     var movement = [_intentional[0] !== false ? M[0] - _intentional[0] : 0, _intentional[1] !== false ? M[1] - _intentional[1] : 0];
     var offset = addV(movement, lastOffset);
-    /**
-     * Rubberband should be 0 when the gesture is no longer active, so that movement
-     * and offset can return within their bounds.
+    /**
+     * Rubberband should be 0 when the gesture is no longer active, so that movement
+     * and offset can return within their bounds.
      */
 
     var _rubberband = _active ? rubberband : [0, 0];
@@ -22799,8 +22799,8 @@ function computeRubberband(bounds, _ref, _ref2) {
       Y2 = _bounds$2[1];
   return [rubberbandIfOutOfBounds(Vx, X1, X2, Rx), rubberbandIfOutOfBounds(Vy, Y1, Y2, Ry)];
 }
-/**
- * Returns a generic, common payload for all gestures from an event.
+/**
+ * Returns a generic, common payload for all gestures from an event.
  */
 
 
@@ -22818,9 +22818,9 @@ function getGenericPayload(_ref3, event, isStartEvent) {
     previous: previous
   };
 }
-/**
- * Returns the reinitialized start state for the gesture.
- * Should be common to all gestures.
+/**
+ * Returns the reinitialized start state for the gesture.
+ * Should be common to all gestures.
  */
 
 function getStartGestureState(_ref4, values, event, initial) {
@@ -22855,9 +22855,9 @@ function getStartGestureState(_ref4, values, event, initial) {
   });
 }
 
-/**
- * The controller will keep track of the state for all gestures and also keep
- * track of timeouts, and window listeners.
+/**
+ * The controller will keep track of the state for all gestures and also keep
+ * track of timeouts, and window listeners.
  */
 
 var Controller = function Controller(classes) {
@@ -22910,8 +22910,8 @@ var Controller = function Controller(classes) {
     if (_this.config.domTarget) _this.bind();
     return _this.clean;
   };
-  /**
-   * Function ran on component unmount: cleans timeouts and removes dom listeners set by the bind function.
+  /**
+   * Function ran on component unmount: cleans timeouts and removes dom listeners set by the bind function.
    */
 
 
@@ -23036,11 +23036,11 @@ function getDomTargetFromConfig(_ref5) {
   var domTarget = _ref5.domTarget;
   return domTarget && 'current' in domTarget ? domTarget.current : domTarget;
 }
-/**
- * bindings is an object which keys match ReactEventHandlerKeys.
- * Since a recognizer might want to bind a handler function to an event key already used by a previously
- * added recognizer, we need to make sure that each event key is an array of all the functions mapped for
- * that key.
+/**
+ * bindings is an object which keys match ReactEventHandlerKeys.
+ * Since a recognizer might want to bind a handler function to an event key already used by a previously
+ * added recognizer, we need to make sure that each event key is an array of all the functions mapped for
+ * that key.
  */
 
 
@@ -23084,13 +23084,13 @@ function removeListeners(el, listeners, options) {
 }
 
 /* eslint-disable react-hooks/exhaustive-deps */
-/**
- * Utility hook called by all gesture hooks and that will be responsible for the internals.
- *
- * @param handlers
- * @param classes
- * @param config
- * @param nativeHandlers - native handlers such as onClick, onMouseDown, etc.
+/**
+ * Utility hook called by all gesture hooks and that will be responsible for the internals.
+ *
+ * @param handlers
+ * @param classes
+ * @param config
+ * @param nativeHandlers - native handlers such as onClick, onMouseDown, etc.
  */
 
 function useRecognizers(handlers, config, nativeHandlers) {
@@ -23127,9 +23127,9 @@ function resolveClasses(internalHandlers) {
   return classes;
 }
 
-/**
- * @private
- * Abstract class for coordinates-based gesture recongizers
+/**
+ * @private
+ * Abstract class for coordinates-based gesture recongizers
  */
 
 var CoordinatesRecognizer = /*#__PURE__*/function (_Recognizer) {
@@ -23141,16 +23141,16 @@ var CoordinatesRecognizer = /*#__PURE__*/function (_Recognizer) {
 
   var _proto = CoordinatesRecognizer.prototype;
 
-  /**
-   * Returns the real movement (without taking intentionality into account)
+  /**
+   * Returns the real movement (without taking intentionality into account)
    */
   _proto.getInternalMovement = function getInternalMovement(values, state) {
     return subV(values, state.initial);
   }
-  /**
-   * In coordinates-based gesture, this function will detect the first intentional axis,
-   * lock the gesture axis if lockDirection is specified in the config, block the gesture
-   * if the first intentional axis doesn't match the specified axis in config.
+  /**
+   * In coordinates-based gesture, this function will detect the first intentional axis,
+   * lock the gesture axis if lockDirection is specified in the config, block the gesture
+   * if the first intentional axis doesn't match the specified axis in config.
    */
   ;
 
@@ -23520,8 +23520,8 @@ var DragRecognizer = /*#__PURE__*/function (_CoordinatesRecognize) {
   return DragRecognizer;
 }(CoordinatesRecognizer);
 
-/**
- * Inlined from https://github.com/alexreardon/memoize-one
+/**
+ * Inlined from https://github.com/alexreardon/memoize-one
  */
 function memoizeOne(resultFn, isEqual) {
   var lastThis;
@@ -23548,10 +23548,10 @@ function memoizeOne(resultFn, isEqual) {
   return memoized;
 }
 
-/**
- * Taken from https://github.com/FormidableLabs/react-fast-compare
- *
- * Dropped comments and ArrayBuffer handling
+/**
+ * Taken from https://github.com/FormidableLabs/react-fast-compare
+ *
+ * Dropped comments and ArrayBuffer handling
  */
 function equal(a, b) {
   if (a === b) return true;
@@ -23641,11 +23641,11 @@ function isEqual(a, b) {
   }
 }
 
-/**
- * Drag hook.
- *
- * @param handler - the function fired every time the drag gesture updates
- * @param [config={}] - the config object including generic options and drag options
+/**
+ * Drag hook.
+ *
+ * @param handler - the function fired every time the drag gesture updates
+ * @param [config={}] - the config object including generic options and drag options
  */
 
 function useDrag(handler, config) {
@@ -23665,9 +23665,9 @@ function useDrag(handler, config) {
   }, buildDragConfig.current(config));
 }
 
-/**
- * @private
- * Abstract class for distance/angle-based gesture recongizers
+/**
+ * @private
+ * Abstract class for distance/angle-based gesture recongizers
  */
 
 var DistanceAngleRecognizer = /*#__PURE__*/function (_Recognizer) {
@@ -23820,8 +23820,8 @@ var PinchRecognizer = /*#__PURE__*/function (_DistanceAngleRecogni) {
         return _this.fireGestureHandler();
       }, 0);
     };
-    /**
-     * PINCH WITH WEBKIT GESTURES
+    /**
+     * PINCH WITH WEBKIT GESTURES
      */
 
 
@@ -23878,8 +23878,8 @@ var PinchRecognizer = /*#__PURE__*/function (_DistanceAngleRecogni) {
 
       _this.fireGestureHandler();
     };
-    /**
-     * PINCH WITH WHEEL
+    /**
+     * PINCH WITH WHEEL
      */
 
 
@@ -23995,11 +23995,11 @@ var PinchRecognizer = /*#__PURE__*/function (_DistanceAngleRecogni) {
   return PinchRecognizer;
 }(DistanceAngleRecognizer);
 
-/**
- * Pinch hook.
- *
- * @param handler - the function fired every time the pinch gesture updates
- * @param [config={}] - the config object including generic options and pinch options
+/**
+ * Pinch hook.
+ *
+ * @param handler - the function fired every time the pinch gesture updates
+ * @param [config={}] - the config object including generic options and pinch options
  */
 
 function usePinch(handler, config) {
@@ -24087,11 +24087,11 @@ var WheelRecognizer = /*#__PURE__*/function (_CoordinatesRecognize) {
   return WheelRecognizer;
 }(CoordinatesRecognizer);
 
-/**
- * Wheel hook.
- *
- * @param handler - the function fired every time the wheel gesture updates
- * @param the config object including generic options and wheel options
+/**
+ * Wheel hook.
+ *
+ * @param handler - the function fired every time the wheel gesture updates
+ * @param the config object including generic options and wheel options
  */
 
 function useWheel(handler, config) {
@@ -24228,11 +24228,11 @@ var MoveRecognizer = /*#__PURE__*/function (_CoordinatesRecognize) {
   return MoveRecognizer;
 }(CoordinatesRecognizer);
 
-/**
- * Move hook.
- *
- * @param handler - the function fired every time the move gesture updates
- * @param [config={}] - the config object including generic options and move options
+/**
+ * Move hook.
+ *
+ * @param handler - the function fired every time the move gesture updates
+ * @param [config={}] - the config object including generic options and move options
  */
 
 function useMove(handler, config) {
@@ -24252,11 +24252,11 @@ function useMove(handler, config) {
   }, buildMoveConfig.current(config));
 }
 
-/**
- * Hover hook.
- *
- * @param handler - the function fired every time the hover gesture updates
- * @param [config={}] - the config object including generic options and hover options
+/**
+ * Hover hook.
+ *
+ * @param handler - the function fired every time the hover gesture updates
+ * @param [config={}] - the config object including generic options and hover options
  */
 
 function useHover(handler, config) {
@@ -24341,11 +24341,11 @@ var ScrollRecognizer = /*#__PURE__*/function (_CoordinatesRecognize) {
   return ScrollRecognizer;
 }(CoordinatesRecognizer);
 
-/**
- * Scroll hook.
- *
- * @param handler - the function fired every time the scroll gesture updates
- * @param [config={}] - the config object including generic options and scroll options
+/**
+ * Scroll hook.
+ *
+ * @param handler - the function fired every time the scroll gesture updates
+ * @param [config={}] - the config object including generic options and scroll options
  */
 
 function useScroll(handler, config) {
@@ -24383,14 +24383,14 @@ function sortHandlers(handlers) {
 
   return [handle, _native, actions];
 }
-/**
- * @public
- *
- * The most complete gesture hook, allowing support for multiple gestures.
- *
- * @param {Handlers} handlers - an object with on[Gesture] keys containg gesture handlers
- * @param {UseGestureConfig} [config={}] - the full config object
- * @returns {(...args: any[]) => HookReturnType<Config>}
+/**
+ * @public
+ *
+ * The most complete gesture hook, allowing support for multiple gestures.
+ *
+ * @param {Handlers} handlers - an object with on[Gesture] keys containg gesture handlers
+ * @param {UseGestureConfig} [config={}] - the full config object
+ * @returns {(...args: any[]) => HookReturnType<Config>}
  */
 
 
