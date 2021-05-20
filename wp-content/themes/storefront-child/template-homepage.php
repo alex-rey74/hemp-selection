@@ -44,7 +44,7 @@ get_header(); ?>
             <div class="half-page " data-aos="zoom-out-right">
                 <a href="<?php echo get_bloginfo('wpurl'). "/categorie-produit/huiles-pastilles/"; ?>">
                     <div class="container-img huile">
-                        <h2 class="caption">HUILE</h2>
+                        <h2 class="caption">HUILES</h2>
                     </div>
                 </a>
             </div>
@@ -82,11 +82,11 @@ get_header(); ?>
             </div>
             <div class="kpi" data-aos="flip-up">
                 <img class="svg-kpi" src="<?php echo wp_get_upload_dir()['baseurl']."/img/bio.svg"?>" alt="">
-                <h4 class="center audrey">Produits français BIO</h4>
+                <h4 class="center audrey">Produits BIO de France</h4>
             </div>
             <div class="kpi" data-aos="flip-up">
                 <img class="svg-kpi" src="<?php echo wp_get_upload_dir()['baseurl']."/img/france.svg"?>" alt="">
-                <h4 class="center audrey">Certifiés aux normes françaises</h4>
+                <h4 class="center audrey">Certifiés aux normes FR</h4>
             </div>
         </div>
         <div class="separator separator-avis">

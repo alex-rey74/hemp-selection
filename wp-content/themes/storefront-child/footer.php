@@ -21,6 +21,7 @@
             <div class="col-footer"></div>
             <div class="col-footer">
                 <ul class="no-style">
+                <li><a class="audrey" href="<?php echo get_permalink(624); ?>">Contact</a></li>
                     <li><a class="audrey" href="<?php echo get_permalink(393); ?>">Mentions Légales</a></li>
                     <li><a class="audrey" href="<?php echo get_permalink(389); ?>">CGV</a></li>
                 </ul>

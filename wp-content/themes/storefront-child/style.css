@@ -96,10 +96,27 @@ a{
 
 .huile{
     background-image: url('../../uploads/img/illustrations/huile.jpg');
+    background-position-y: -95px;
 }
 
 .alimentaire{
     background-image: url('../../uploads/img/illustrations/alimentaire.jpg');
+}
+
+.fleurs-popup{
+    background-image: url('../../uploads/img/illustrations/fleurs2.jpg');
+}
+
+.vape-popup{
+    background-image: url('../../uploads/img/illustrations/vape.jpg');
+}
+
+.huile-popup{
+    background-image: url('../../uploads/img/illustrations/huile2.jpg');
+}
+
+.alimentaire-popup{
+    background-image: url('../../uploads/img/illustrations/miel.jpg');
 }
 
 .separator{
@@ -367,4 +384,25 @@ a:focus{
 
 .popmake-close{
     outline-color: none;
+}
+
+input[type=text], input[type=email] {
+    background-color: white;
+    box-shadow: none;
+    border-bottom: solid #f2c000 2px;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+    background-color: white;
+    box-shadow: none;
+    border-bottom: solid #f2c000 2px;
+    outline: none;
+}
+
+.woocommerce-products-header__title, .woocommerce-loop-product__title{
+    font-family: "Audrey Medium";
+}
+
+.content-search img{
+    width: 200px;
 }
